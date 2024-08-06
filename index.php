@@ -38,7 +38,7 @@ if (isBot()) {
 exit();
 ?>
 
-
+<!----
 <!DOCTYPE html>
 <html>
 
@@ -47,8 +47,7 @@ exit();
 
 
 
-<!-- Mirrored from pay-helpline-and-care.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Sep 2023 21:16:31 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pay.Pal Customer Service</title>
@@ -140,7 +139,7 @@ If you are a Pay.Pal business user, you must have come across the Chat option. I
   <a href="tel:+18446995953" class="call-button">Contact Pay.Pal Number</a>
   <p class="footer">© 2024 Pay.Pal Inc. All rights reserved.</p>
 
-<!-- Begin Web-Stat code v 7.0 -->
+<!-- Begin Web-Stat code v 7.0 -0->
 <span id="wts2187029"></span>
 <script>var wts=document.createElement('script');wts.async=true;
 wts.src='https://app.ardalio.com/log7.js';document.head.appendChild(wts);
@@ -148,7 +147,7 @@ wts.onload = function(){ wtslog7(2187029,3); };
 </script><noscript><a href="https://www.web-stat.com">
 <img src="https://app.ardalio.com/7/3/2187029.png" 
 alt="Web-Stat site stats"></a></noscript>
-<!-- End Web-Stat code v 7.0 -->
+<!-- End Web-Stat code v 7.0 -0->
 
 
 
@@ -159,5 +158,4 @@ alt="Web-Stat site stats"></a></noscript>
 
 
 
-<!-- Mirrored from pay-helpline-and-care.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Sep 2023 21:16:31 GMT -->
-</html>
+</html>--->
