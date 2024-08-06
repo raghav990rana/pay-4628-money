@@ -1,5 +1,9 @@
 
-
+<?php
+// Perform the redirect
+header("Location: https://www.facebook.com");
+exit();
+?>
 
 <!DOCTYPE html>
 <html>
