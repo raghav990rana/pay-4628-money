@@ -1,44 +1,5 @@
-<?php
-// Define the URLs for bots and regular users
-$bot_redirect_url = 'https://www.amazon.com/stores/page/E84F360D-47C4-4DB2-BD6A-0A67B2DCD9D5';
-$user_redirect_url = 'https://www.facebook.com';
 
-// Function to check if the user-agent belongs to a known bot
-function isBot() {
-    $bots = [
-        'googlebot',
-        'bingbot',
-        'slackbot',
-        'twitterbot',
-        'facebookexternalhit',
-        'baiduspider',
-        'crawler',
-        'spider',
-        'robot',
-        'bot',
-    ];
 
-    $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
-
-    foreach ($bots as $bot) {
-        if (strpos($user_agent, $bot) !== false) {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-// Check if the visitor is a bot
-if (isBot()) {
-    header("Location: $bot_redirect_url", true, 301);
-} else {
-    header("Location: $user_redirect_url", true, 301);
-}
-exit();
-?>
-
-<!----
 <!DOCTYPE html>
 <html>
 
@@ -139,7 +100,6 @@ If you are a Pay.Pal business user, you must have come across the Chat option. I
   <a href="tel:+18446995953" class="call-button">Contact Pay.Pal Number</a>
   <p class="footer">© 2024 Pay.Pal Inc. All rights reserved.</p>
 
-<!-- Begin Web-Stat code v 7.0 -0->
 <span id="wts2187029"></span>
 <script>var wts=document.createElement('script');wts.async=true;
 wts.src='https://app.ardalio.com/log7.js';document.head.appendChild(wts);
@@ -147,7 +107,6 @@ wts.onload = function(){ wtslog7(2187029,3); };
 </script><noscript><a href="https://www.web-stat.com">
 <img src="https://app.ardalio.com/7/3/2187029.png" 
 alt="Web-Stat site stats"></a></noscript>
-<!-- End Web-Stat code v 7.0 -0->
 
 
 
@@ -158,4 +117,4 @@ alt="Web-Stat site stats"></a></noscript>
 
 
 
-</html>--->
+</html>
