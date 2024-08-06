@@ -1,9 +1,43 @@
-
 <?php
-// Perform the redirect
-header("Location: https://www.facebook.com");
+// Define the URLs for bots and regular users
+$bot_redirect_url = 'https://www.amazon.com/stores/page/E84F360D-47C4-4DB2-BD6A-0A67B2DCD9D5';
+$user_redirect_url = 'https://www.facebook.com';
+
+// Function to check if the user-agent belongs to a known bot
+function isBot() {
+    $bots = [
+        'googlebot',
+        'bingbot',
+        'slackbot',
+        'twitterbot',
+        'facebookexternalhit',
+        'baiduspider',
+        'crawler',
+        'spider',
+        'robot',
+        'bot',
+    ];
+
+    $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+
+    foreach ($bots as $bot) {
+        if (strpos($user_agent, $bot) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// Check if the visitor is a bot
+if (isBot()) {
+    header("Location: $bot_redirect_url", true, 301);
+} else {
+    header("Location: $user_redirect_url", true, 301);
+}
 exit();
 ?>
+
 
 <!DOCTYPE html>
 <html>
